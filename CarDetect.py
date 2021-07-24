@@ -92,7 +92,7 @@ def main():
         linecounter += 1
         if linecounter >= 2:
             cv2.line(frame, (0, detectY), (width, detectY), (0, 0, 255), 3)
-        cv2.putText(frame, "Car Numer: %d" % carNum, (0, 30), font, 1, (255, 255, 255), 1, cv2.LINE_AA)
+        cv2.putText(frame, "Car Number: %d" % carNum, (0, 30), font, 1, (255, 255, 255), 1, cv2.LINE_AA)
 
         cv2.imshow("BackgroundSubtractorMOG2", fgmask)
         cv2.imshow("Car detection result", frame)
